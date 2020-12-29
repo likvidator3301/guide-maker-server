@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>.net5</TargetFramework>
+    <UserSecretsId>8f572d1c-85c4-4b95-a7e0-590279e8be9a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GuideMaker.Core\GuideMaker.Core.csproj" />
+    <ProjectReference Include="..\GuideMaker.Repository.PostgreSQL\GuideMaker.Repository.PostgreSQL.csproj" />
+    <ProjectReference Include="..\GuideMaker.Repository\GuideMaker.Repository.csproj" />
+  </ItemGroup>
+
+
+</Project>
